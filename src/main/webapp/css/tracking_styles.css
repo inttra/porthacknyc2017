@@ -1,0 +1,144 @@
+/*BEGIN VISIBILITY STYLES*/	
+	.container-tracking-iframe{
+		padding:0px;
+		margin:0px;
+		width:100%;
+		height:350px;
+		border:0px solid #cccccc;
+		overflow-y:hidden;
+		overflow-x:auto;
+		background-color:#FFFFFF;
+	}
+	#TlbFilter table td, #TlbFilter table th {
+		text-align: center;
+		border: 1px solid #DDDDDD;
+	}
+	#TlbFilter td a {
+		width: 100%;
+		display: block;
+	}
+	#c_filterby table th, #c_filterby table td {
+		vertical-align: middle !important;
+	}
+	#templateGrid_info {
+		float: left
+	}
+	.hoverHighlight {
+		border-color: #5387bd;
+		outline: 0;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(83, 135, 189, 0.6);
+		box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(83, 135, 189, 0.6);
+	}
+	.dttable_wrapper{
+		width:100%;
+		overflow:auto;
+	}
+	.dttable_wrapper table.table thead,
+	.dttable_wrapper table.table tbody{
+		white-space:nowrap;
+	}
+	.dttable_wrapper table.table thead th{
+		padding-right:20px;
+	}
+	
+/*START ALERTS WORKSPACE SPECIFIC LAYOUT STYLES*/
+.carrier-section {
+	background-color: #FFFFFF;
+}
+.carrier-tabs {
+	margin-top: -10px;
+	margin-left: -10px;
+	margin-right: -10px;
+}
+.carrier-tabs .nav-tabs > li > a {
+	border-radius: 0px;
+}
+.carrier-tabs .nav-tabs > li.no-left-border > a, .carrier-tabs .nav-tabs > li.no-left-border > a:hover, .carrier-tabs .nav-tabs > li.no-left-border > a:focus {
+	border-left: 0px solid #FFFFFF;
+}
+.carrier-tabs .nav-tabs > li.no-right-border > a, .carrier-tabs .nav-tabs > li.active.no-right-border > a:hover, .carrier-tabs .nav-tabs > li.active.no-right-border > a:focus {
+	border-right: 0px solid #FFFFFF;
+}
+#TlbFilter table td, #TlbFilter table th {
+	text-align: center;
+	border: 1px solid #DDDDDD;
+}
+#TlbFilter td a {
+	width: 100%;
+	display: block;
+}
+#c_filterby table th, #c_filterby table td {
+	vertical-align: middle !important;
+}
+#templateGrid_info {
+	float: left
+}
+
+#myTlb th {
+	min-width: 200px;
+}
+#myTlb td textarea {
+	height: auto;
+	min-height: 250px;
+}
+.hoverHighlight {
+	border-color: #5387bd;
+	outline: 0;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(83, 135, 189, 0.6);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(83, 135, 189, 0.6);
+}
+.dttable_wrapper{
+	width:100%;
+	overflow:auto;
+}
+.dttable_wrapper table.table thead,
+.dttable_wrapper table.table tbody{
+	white-space:nowrap;
+}
+.dttable_wrapper table.table thead th{
+	padding-right:20px;
+}
+tr.highlighted small.text-muted{ /*Column sorting*/
+	color: #FFFFFF !important;
+}
+
+.details-scrollable{
+	padding-top:15px;
+	padding-right:15px;
+	max-height:300px;
+	overflow:auto;
+}
+#templateGrid tbody tr td i, #alertDrilldownModal .modal-header i{
+	font-size:17px;
+	cursor:pointer;
+}
+#templateGridBL th, #templateGridBL td{white-space: nowrap; padding-right: 20px;}
+table{
+	border-collapse:collapse;
+	width:100%;
+}
+.nowrap {
+	white-space: nowrap;
+}
+.event-radio{
+	margin:0px !important;
+	margin-right:5px !important;	
+}
+/* END ALERTS WORKSPACE SPECIFIC LAYOUT STYLES */
+
+	@media (max-width: 767px) {
+
+	}
+	
+	@media (min-width: 768px) {
+	
+	}
+			
+	@media (min-width: 992px) {
+		
+	}
+	
+	@media (min-width: 1200px) {
+
+	}
+/*END VISIBILITY STYLES*/

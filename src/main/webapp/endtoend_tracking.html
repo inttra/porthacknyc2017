@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<title>Ports & Logistics Hackathon NYC</title>
+		<!-- CSS -->
+		<link href="../common/css/bootstrap.min.css" rel="stylesheet" media="screen">
+		<link href="../common/css/inttra-portal/jquery-ui-1.10.4.custom.min.css" rel="stylesheet" media="screen, print">
+		<link href="../common/css/common.css" rel="stylesheet" media="screen">
+		<link href="css/tracking_styles.css" rel="stylesheet" media="screen">
+		<!-- JQuery -->
+		<script src="../common/js/jquery-core.js" type="text/javascript"></script>
+		<script src="../common/js/jquery-ui.js" type="text/javascript"></script>
+		<!-- Bootstrap -->
+		<script src="../common/js/bootstrap.min.js"></script>
+		<!-- Tracking -->
+		<script src="../common/js/common.js" type="text/javascript"></script>
+
+        <script>
+        $(function() {
+            
+			$('#inttra-header').load("/hackathon/header");
+			$('#refField').focus();
+        });
+		</script>
+		<script src="js/tracking.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+			<!-- BEGIN HACKATHON NYC HEADER SCOPE -->
+			<div id="inttra-header">
+
+			</div>
+			<!-- END HACKATHON NYC HEADER SCOPE -->
+			<!--START MAIN CONTENT-->
+			<div class="main-content">
+
+				<div class="container main-background">
+                	<div id="searchHolder">	
+
+					
+                        <!-- START TITLE -->
+                        <div class="row" id="si-title">
+                            <div class="col-xs-12 page-title">
+                                <h3 id="si-heading">End-to-End Tracking</h3>
+                            </div>
+                        </div>
+                        <!-- END TITLE -->
+                        <!-- START ERROR MESSAGE DISPLAY -->
+                        <div id="search-errors" class="row pushdown15" style="display:none;">
+                            <div class="col-sm-12">
+                                <div class="alert alert-danger fade clr-marg-bot in">
+                                    <strong>Error:</strong> User doesn't have privileges to view X, Y, Z...
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END ERROR MESSAGE DISPLAY -->
+                        <!-- START SEARCH SECTION -->
+                        <div class="row pushdown10">
+                            <div class="col-sm-12 required">
+                                <label class="pull-right"><small><i class="glyphicon glyphicon-asterisk"></i>=Required Field</small></label>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-sm-12" id="accordionSet1">
+                                <div class="panel panel-default">
+                                    <div id="collapseOne" class="panel-collapse collapse in">
+                                        <div class="panel-body">
+                                        	<div class="section0 row row-5-gutter">
+       
+                                            </div>
+                                            <div id="oneClickPanel">
+                                            	<form id="oneClickForm">
+                                                    <div class="row row-5-gutter">
+                                                        <div class="col-sm-4 col-md-4 col-lg-3 col-5-gutter">
+                                                            <div class="form-group required">
+                                                                <label for="refType"><i class="glyphicon glyphicon-asterisk"></i>Search by</label>
+                                                                <select size="1" class="form-control input-sm" id="refType">
+                                                                    <option value="ponumber" selected>Purchase Order Number</option>
+                                                                    <option value="container">Container Number</option>
+                                                                    <option value="carrierbookingnumber">Carrier Booking Number</option>
+                                                                    <option value="blreference">B/L Reference Number</option>
+                                                                    <option value="inttrareference">INTTRA Reference Number</option>
+                                                                    <option value="all">All References</option>
+                                                                </select>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-md-4 col-lg-3 col-5-gutter">
+                                                            <div class="form-group">
+                                                                <label class="hidden-xs">&nbsp;</label>
+                                                                <input type="text" class="form-control input-sm" name="refField" id="refField" placeholder="Enter Reference..." maxlength="30">
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-sm-4 col-md-4 col-lg-6 col-5-gutter">
+                                                            <label class="hidden-xs">&nbsp;</label>
+                                                            <div class="form-group  clr-marg-bot">
+                                                                <button id="showTrackResults" type="button" class="btn btn-sm btn-primary">
+                                                                    <i class="glyphicon glyphicon-search"></i>&nbsp;Search
+                                                                </button>
+                                                                <button id="resetTrackingResults" type="reset" class="btn btn-sm btn-default">
+                                                                    Reset
+                                                                </button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </form>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- END SEARCH SECTION -->					
+					
+					
+                    </div>
+                    <!-- START MAIN CONTAINER SEARCH-->
+                    <div id="RESULT">
+                    </div>
+                    <!--END MAIN CONTAINER SEARCH-->
+                </div>
+			</div>
+			<!--END MAIN CONTENT-->
+			<!--START FOOTER-->
+			<footer>
+				<div class="container">
+					<div class="row">
+						<div class="col-sm-12 pushdown5">
+							<div class="copyright">
+								NYC Ports & Logistics hackathon. All rights reserved.
+							</div>
+						</div>
+					</div>
+				</div>
+			</footer>
+			<!--END FOOTER-->
+
+	</body>
+</html>
